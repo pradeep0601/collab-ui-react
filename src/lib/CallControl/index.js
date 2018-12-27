@@ -29,6 +29,7 @@ class CallControl extends React.PureComponent {
         className={
           'cui-call-control' +
           `${(type === 'cancel' && ` cui-call-control--cancel`) || ''}` +
+          `${(type === 'microphone-muted' && (active && ` cui-call-control--microphone-muted--active` || ` cui-call-control--microphone-muted`)) || ''}` +
           `${(active && ` cui-call-control--active`) || ''}` +
           `${(className && ` ${className}`) || ''}`
         }

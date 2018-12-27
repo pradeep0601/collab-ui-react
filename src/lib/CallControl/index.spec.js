@@ -77,6 +77,7 @@ describe('tests for <CallControl />', () => {
     it('should render microphone-muted type', () => {
       const container = mount(<CallControl type='microphone-muted' ariaLabel='test' />);
 
+      expect(container.find('Button').hasClass('cui-call-control--microphone-muted')).toEqual(true);
       expect(container.find('Icon').props().name).toEqual('microphone-muted_24');
     });
 
@@ -125,5 +126,11 @@ describe('tests for <CallControl />', () => {
     const container = mount(<CallControl type='microphone-muted' ariaLabel='test' iconColor='green' />);
 
     expect(container.find('Icon').props().color).toEqual('green');
+  });
+
+  it('should render microphone-muted type with class microphone-muted--active on active', () => {
+    const container = mount(<CallControl type='microphone-muted' active={true} ariaLabel='test' />);
+
+    expect(container.find('Button').hasClass('cui-call-control--microphone-muted--active')).toEqual(true);
   });
 });
