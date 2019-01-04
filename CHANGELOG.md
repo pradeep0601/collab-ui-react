@@ -1,3 +1,10 @@
+## [10.1.1](https://github.com/collab-ui/collab-ui-react/compare/v10.1.0...v10.1.1) (2019-01-04)
+
+
+### Bug Fixes
+
+* **CallControl:** add 'participant-list' as type in CallControl ([cd51bd9](https://github.com/collab-ui/collab-ui-react/commit/cd51bd9))
+
 # [10.1.0](https://github.com/collab-ui/collab-ui-react/compare/v10.0.9...v10.1.0) (2018-12-20)
 
 
